@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josué Transporte 4x4 | San Pedro de Atacama</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#DC2626',
+                        brandDark: '#0B0F19',
+                        brandCard: '#111827',
+                        brandGold: '#F59E0B'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brandDark text-gray-100 font-sans antialiased selection:bg-brandRed selection:text-white">
+
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="sticky top-0 z-50 bg-brandDark/95 backdrop-blur border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-brandRed text-white p-2.5 rounded-xl shadow-lg shadow-brandRed/30">
+                    <i class="fa-solid fa-truck-pickup text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-wider text-white uppercase block leading-none">Josué Transporte</span>
+                    <span class="text-xs font-semibold text-brandGold tracking-widest uppercase">4x4 • San Pedro de Atacama</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#inicio" class="hover:text-brandGold transition">Inicio</a>
+                <a href="#servicios" class="hover:text-brandGold transition">Servicios</a>
+                <a href="#camioneta" class="hover:text-brandGold transition">La Ford Ranger</a>
+                <a href="#contacto" class="hover:text-brandGold transition">Contacto</a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <a href="tel:+56951573562" class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2.5 rounded-xl font-bold text-sm transition border border-gray-700 flex items-center space-x-2">
+                    <i class="fa-solid fa-phone text-brandGold"></i>
+                    <span class="hidden sm:inline">+56 9 5157 3562</span>
+                </a>
+                <a href="https://wa.me/56951573562?text=Hola%20Josué,%20necesito%20cotizar%20un%20servicio%20de%20transporte%204x4." target="_blank" class="bg-brandRed hover:bg-red-700 text-white px-5 py-2.5 rounded-xl font-bold text-sm transition shadow-lg shadow-brandRed/20 flex items-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative pt-16 pb-24 overflow-hidden border-b border-gray-800">
+        <div class="absolute inset-0 z-0 opacity-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1920&auto=format&fit=crop');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-brandDark via-brandDark/80 to-transparent"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-brandCard border border-gray-800 px-3.5 py-1.5 rounded-full text-xs font-semibold text-brandGold">
+                        <span class="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span>
+                        <span>Disponible en San Pedro de Atacama y Calama</span>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-none text-white">
+                        JOSUÉ TRANSPORTE <span class="text-brandRed">4X4</span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-gray-300 max-w-2xl leading-relaxed">
+                        Tu transporte, tu aventura y tu solución en el desierto. Taxi privado, traslados turísticos, fletes, mudanzas y rescate vehicular con nuestra poderosa <strong>Ford Ranger 4x4</strong>.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#contacto" class="bg-brandRed hover:bg-red-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-brandRed/30 transition flex items-center space-x-3 text-base">
+                            <i class="fa-regular fa-paper-plane"></i>
+                            <span>Solicitar Cotización</span>
+                        </a>
+                        <a href="tel:+56951573562" class="bg-brandCard hover:bg-gray-800 border border-gray-700 text-white font-bold px-8 py-4 rounded-xl transition flex items-center space-x-3 text-base">
+                            <i class="fa-solid fa-phone text-brandGold"></i>
+                            <span>Llamar Directo</span>
+                        </a>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-gray-800/80 text-sm">
+                        <div>
+                            <span class="block font-black text-2xl text-white">4x4</span>
+                            <span class="text-gray-400 text-xs">Tracción Total</span>
+                        </div>
+                        <div>
+                            <span class="block font-black text-2xl text-white">24/7</span>
+                            <span class="text-gray-400 text-xs">Coordinación Directa</span>
+                        </div>
+                        <div>
+                            <span class="block font-black text-2xl text-white">100%</span>
+                            <span class="text-gray-400 text-xs">Atención Personalizada</span>
+                        </div>
+                    </div>
